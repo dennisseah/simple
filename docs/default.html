@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/feb02e3b.site-ltr.css">
+  <link rel="stylesheet" href="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/2488a4dd.conceptual.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./spk.css ">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+  <script src="./spk.js"></script>
+  <title>SPK Commands</title>
+</head>
+<body>
+  <div id="header">
+    <div class="header-left-text">
+      <div><img width="30px" src="images/mslogo.png"></div>
+      <div class="header-text">SPK</div>
+    </div>
+  </div>
+  <div id="subheader">
+    <div id="item_feedback" class="tab-item">
+    <span class="fa fa-commenting-o"></span>
+    <span class="tinyfont">Feedback</span>
+    </div>
+    <div id="item_bookmark" class="tab-item">
+      <span class="fa fa-bookmark-o"></span>
+      <span class="tinyfont">Bookmark</span>
+      </div>
+    <div id="item_share" class="tab-item">
+      <span class="fa fa-share-square-o"></span>
+      <span class="tinyfont">Share</span>
+    </div>
+  </div>
+  <div id="content">
+    <div class="content-left">
+    <div class="title">SPK Commands</div>
+    <div>
+      <div class="control has-icons-left">
+        <input id="commandfilter" role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="ax-0" class="autocomplete-input input control has-icons-left is-small is-full-width" type="text" aria-expanded="false" aria-owns="ax-1-listbox" aria-activedescendant="" placeholder="Filter by command">
+  
+        <span class="icon is-small is-left" aria-hidden="true">
+          <span class="fa fa-filter input-icon"></span>
+        </span>
+  
+        <span class="autocomplete-loader loader has-text-primary" aria-hidden="true" hidden=""></span>
+      </div>
+    </div>
+    <div id="command-list"></div>
+    </div>
+    
+    <div id="spk-details" class="content-right"></div>
+  </div>
+  
+</body>
+</html>

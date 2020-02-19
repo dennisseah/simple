@@ -84,12 +84,12 @@ function populateListing() {
 }
 
 var subheaderItems = function() {
-  $(".tab-item").each(function(i, item) {
-    var $item = $(item);
-    var id = $item.attr("id").replace(/^item_/, "");
-    $item.click(function() {
-      alert(id);
-    });
+  $("#item_share").click(function(evt) {
+    evt.stopPropagation();
+    $("#sharing-menu").css("display", "block");
+  });
+  $("body").click(function() {
+    $("#sharing-menu").css("display", "none");
   });
 };
 

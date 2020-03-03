@@ -36,20 +36,28 @@ The frontend and backend are hosted by an Express app. This is how this applicat
 1. Building react frontend app
 `react-scripts-ts build`
 2. Building backend app `tsc src/backend/** --outDir build/backend/`
-3. Building expressJS app `tsc src/server.ts --outDir build/`
+3. Building Express app `tsc src/server.ts --outDir build/`
 
-All the resources and code for the expressJS app is in the build folder; and the app runs from the folder. All backend calls are prefixed with `api/`.
+All the resources and code for the Express app is in the build folder; and the app runs from the folder. All backend calls are prefixed with `api/`.
 
-Secret and configuration values are exposed to the expressJS app via environment parameters.
+Secret and configuration values are exposed to the Express app via environment parameters.
 
 ### 3.2 Running React Service Worker
-![development setup](devSetup.png)
-In order to faciliate code development (mainly in frontend), the react's worker service is used. And it proxies all requests with `api/` prefix to an Express application running at port 8001.
+<p style="text-align:center">
+<img src="devSetup.png" style="width:500px;height:auto">
+</p>
 
-Similarly, secret and configuration values are exposed to the expressJS app via environment parameters; and they are never exposed in the frontend layer.
+In order to faciliate code development (mainly in frontend), the react's worker service is used. And it proxies all requests with `api/` prefix to an Express application running at port 8001. This proxy is enabled by React's service worker.
+We need a value 
+```
+"http://localhost:8001"
+```
+in `package.json`.
+
+Similarly, secret and configuration values are exposed to the Express app via environment parameters.
 
 ## 4. Dependencies
-None. This is within [spektate](https://github.com/microsoft/spektate).
+None. All the implementations are within [spektate](https://github.com/microsoft/spektate).
 
 ## 5. Known issues
 

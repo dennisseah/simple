@@ -59,9 +59,9 @@ None
 2. What are the environment parameters to export?
 
 ## References
-[1] https://daveceddia.com/create-react-app-express-backend/
-[2] https://daveceddia.com/deploy-react-express-app-heroku/
-[3] https://docs.docker.com/engine/reference/commandline/run/
+1. https://daveceddia.com/create-react-app-express-backend/
+2. https://daveceddia.com/deploy-react-express-app-heroku/
+3. https://docs.docker.com/engine/reference/commandline/run/
 
 
 \- end -

@@ -1,5 +1,5 @@
 # Software Design Document
-Reference: Introspection - Development and production setup of Dashboard 
+Reference: Introspection - Development and production setup of Dashboard <br>
 Authors: Samiya Akhtar, Andre Briggs, Dennis Seah
 
 | Revision | Date | Author | Remarks |

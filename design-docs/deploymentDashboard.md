@@ -4,7 +4,7 @@ Authors: Samiya Akhtar, Andre Briggs, Dennis Seah
 
 | Revision | Date | Author | Remarks |
 |--:|--|--|--|
-| 0.1 | Mar-02, 2012 | Dennis Seah | Initial Draft |
+| 0.1 | Mar-02, 2020 | Dennis Seah | Initial Draft |
 
 ## 1. Overview
 This design is to fix a few things in the current implementation of `spk deployment dasboard` command. They are

@@ -53,13 +53,15 @@ If there are _N_ deployed instances. There will be
 
 So we are looking at <i>N + 2</i> calls after the backend component is up and running. And these information is cached.
 
-There will be a timer that wakes up at _T_ seconds to refresh the cache in the following manner.
+A timer wakes up at _T_ seconds to refresh the cache in the following manner.
 1. one API call to get the deployed instances
 2. Check if there are new instances, if yes, make get author information API call for these new instances and update the cache.
 3. Check if there are deleted deployed instances, if yes, remove them from the cache.
 4. one API call to get Manifest Repo Sync State.
 
 there shall be one call from the frontend (browser) to backend to get the deployment result.
+
+Cache refresh duration, _T_ is customizable via an environment parameter, `REACT_APP_CACHE_REFRESH_IN_SEC`. During development of React UI, the value of this parameter can be set to a very high value to avoid hit the Azure Dev-Ops API.
 
 ## 4. Dependencies
 

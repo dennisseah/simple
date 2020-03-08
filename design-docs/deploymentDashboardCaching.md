@@ -12,7 +12,7 @@ Authors: Samiya Akhtar, Andre Briggs, Dennis Seah
 The application server that hosts that introspection dashboard has two components namely the frontend and backend components. The former is representation layer and the latter is responsible for fetching results from Azure Dev-Op API server.
 
 <p style="text-align:center">
-<img src="azureAPICalls.png" style="width:400px; height:auto">
+<img src="azureAPICalls.png" width="400px">
 </p>
 
 The frontend has a polling mechanism to fetch the latest result from the backend (which in turn makes HTTPS call to Azure Dev-Op API server). This can be problematic when we have multiple browser instances polling for latest results.
@@ -21,7 +21,7 @@ The frontend has a polling mechanism to fetch the latest result from the backend
 3. Hitting the limit of API calls to Azure Dev-Op API server
 
 <p style="text-align:center">
-<img src="multipleBrowsersToBackend.png" style="width:450px; height:auto">
+<img src="multipleBrowsersToBackend.png" width="450px">
 </p>
 
 On top of these, the frontend is not doing smart caching. E.g.

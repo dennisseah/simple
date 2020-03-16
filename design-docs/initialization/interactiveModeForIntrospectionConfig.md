@@ -42,12 +42,14 @@ User needs to provide these information
 
 1. Storage Account Name
    * Lowercase letters and numbers are allowed;
-   * 3 to 24 character long
+   * 3 to 24 characters long
 1. Storage Table Name
    * Alphanumeric and start with an alphabet;
-   * 3 to 63 character long
-1. Storage Account Key (Secret)
-   * cannot be empty string
+   * 3 to 63 characters long
+1. Key Vault Name
+   * Alphanumerics and hyphens.
+   * Start with letter. End with letter or digit. Can't contain consecutive hyphens.
+   * 3 to 24 characters long
 1. Source Repo Access Token (Secret)
    * cannot be empty string
 1. Partition Table Name

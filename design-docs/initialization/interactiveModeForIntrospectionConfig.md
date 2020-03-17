@@ -35,7 +35,7 @@ This design shall only consider the case wher user already has Azure storage acc
 ## 3. Design Details
 
 <p style="text-align:center">
-<img src="spkInitSupportIntrospection1.png" width="200px">
+<img src="spkInitSupportIntrospection1.png" width="175px">
 </p>
 
 User needs to provide these information

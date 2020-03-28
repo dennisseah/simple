@@ -66,7 +66,7 @@ interface CommandValues {
 
 export const populateInheritValueFromConfig = (
   options: CommandOption[], # from json decorator
-  config: ConfigYaml,       # from config.yaml
+  config: ConfigValues,     # from config.yaml
   values: CommandValues     # user input
 ): void => {
   if [config && options] # do nothing if these are absent

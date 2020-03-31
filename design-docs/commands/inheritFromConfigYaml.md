@@ -9,7 +9,7 @@ command<br> Authors: Andre Briggs, Dennis Seah
 
 ## 1. Overview
 
-By Design, `spk` command option values inherit from configuration values from spk config yaml. This is to help the user from having to provide these values in the command line. However, in our generate documents and `winston` generated doc, users are not informed about these inheritance. In this design doc, we propose a way to add this inheritance information in our generated operation document; and also a helper function to automatically populate values from `config.yaml` to the command option values.
+By Design, `spk` command option values inherit from configuration values from spk config yaml. This is to help the user from having to provide these values in the command line. However, in our generate documents and `commander` generated help, users are not informed about these inheritance. In this design doc, we propose a way to add this inheritance information in our generated operation document; and also a helper function to automatically populate values from `config.yaml` to the command option values.
 
 ## 2. Out of Scope
 
